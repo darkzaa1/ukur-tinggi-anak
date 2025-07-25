@@ -3,7 +3,6 @@ import Navbar from "./components/navbar";
 import Tvc from "./components/tvc";
 import Komposisi from "./components/komposisi";
 import Footer from "./components/footer";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
