@@ -30,6 +30,7 @@ function KalkulatorTPG() {
 
   return (
     <div
+      id="kalkulator"
       className="kalkulator-section container-fluid p-0"
       style={{
         backgroundImage: "url('assets/images/bg-kalkulator-01.png')",

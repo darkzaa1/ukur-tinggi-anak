@@ -29,7 +29,14 @@ function App() {
                   </h2>
                 </div>
                 <div className=" col-12 mb-5">
-                  <button className="tombol-ukur">
+                  <button
+                    className="tombol-ukur"
+                    onClick={() => {
+                      document
+                        .getElementById("kalkulator")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
                     Ayo ukur kira - kira tinggi anak kamu!
                   </button>
                 </div>
