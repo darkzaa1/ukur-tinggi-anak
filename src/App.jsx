@@ -1,107 +1,66 @@
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import KalkulatorTPG from "./components/kalkulator";
+import Navbar from "./components/navbar";
+import Tvc from "./components/tvc";
+import Komposisi from "./components/komposisi";
+import Footer from "./components/footer";
 
-function KalkulatorTPG() {
-  const [gender, setGender] = useState("");
-  const [ayah, setAyah] = useState("");
-  const [ibu, setIbu] = useState("");
-  const [result, setResult] = useState(null);
-
-  const handleCalculate = () => {
-    const tbAyah = parseFloat(ayah);
-    const tbIbu = parseFloat(ibu);
-    if (isNaN(tbAyah) || isNaN(tbIbu) || !gender) {
-      alert("Lengkapi semua data terlebih dahulu.");
-      return;
-    }
-
-    let tpg;
-    if (gender === "laki-laki") {
-      tpg = (tbIbu + 13 + tbAyah) / 2;
-    } else if (gender === "perempuan") {
-      tpg = (tbAyah - 13 + tbIbu) / 2;
-    }
-
-    const min = (tpg - 8.5).toFixed(1);
-    const max = (tpg + 8.5).toFixed(1);
-
-    setResult({ min, max });
-  };
-
+function App() {
   return (
-    <div className="container py-5">
-      <div className="card shadow-sm">
-        <div className="card-body">
-          <h2 className="card-title mb-4 text-center">
-            Kalkulator Perkiraan Tinggi Anak
-          </h2>
-
-          <div className="mb-3">
-            <label className="form-label">Jenis Kelamin:</label>
-            <div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="gender"
-                  value="laki-laki"
-                  checked={gender === "laki-laki"}
-                  onChange={(e) => setGender(e.target.value)}
-                />
-                <label className="form-check-label">Laki-laki</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="gender"
-                  value="perempuan"
-                  checked={gender === "perempuan"}
-                  onChange={(e) => setGender(e.target.value)}
-                />
-                <label className="form-check-label">Perempuan</label>
+    <div
+      className="container-fluid"
+      style={{
+        backgroundImage: "url('/assets/images/background-header.jpg')",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: 0,
+      }}
+    >
+      <Navbar />
+      <div className="wave container-fluid p-0">
+        {/* Produk */}
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <div className="row justify-content-center">
+                <div className="col-10 mb-3">
+                  <h2 className="tagline">
+                    Bantu pelihara kesehatan tulang anak dalam masa pertumbuhan
+                  </h2>
+                </div>
+                <div className=" col-12 mb-5">
+                  <button className="tombol-ukur">
+                    Ayo ukur kira - kira tinggi anak kamu!
+                  </button>
+                </div>
+                <div className="col-12">
+                  <img
+                    className="packshot"
+                    src="/assets/images/packshot-01.png"
+                    alt="Packshot Lcal Grow"
+                  />
+                </div>
               </div>
             </div>
           </div>
-
-          <div className="mb-3">
-            <label className="form-label">Tinggi Ayah (cm):</label>
-            <input
-              type="number"
-              value={ayah}
-              onChange={(e) => setAyah(e.target.value)}
-              className="form-control"
-              placeholder="Masukkan tinggi ayah"
-            />
-          </div>
-
-          <div className="mb-3">
-            <label className="form-label">Tinggi Ibu (cm):</label>
-            <input
-              type="number"
-              value={ibu}
-              onChange={(e) => setIbu(e.target.value)}
-              className="form-control"
-              placeholder="Masukkan tinggi ibu"
-            />
-          </div>
-
-          <button onClick={handleCalculate} className="btn btn-primary w-100">
-            Hitung
-          </button>
-
-          {result && (
-            <div className="alert alert-success mt-4 text-center">
-              <h4>Perkiraan Tinggi Anak</h4>
-              <p>
-                {result.min} cm — {result.max} cm
-              </p>
-            </div>
-          )}
         </div>
+        {/* komposisi */}
+        <div className="container">
+          <Komposisi />
+        </div>
+        {/* kalkulator */}
+        <div className="container-fluid p-0">
+          <KalkulatorTPG />
+        </div>
+        {/* tvc */}
+        <div className="container">
+          <Tvc />
+        </div>
+        {/* footer */}
+        <Footer />
       </div>
     </div>
   );
 }
 
-export default KalkulatorTPG;
+export default App;

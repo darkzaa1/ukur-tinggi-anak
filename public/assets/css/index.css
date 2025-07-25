@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.tombol-ukur:hover {
+  background-color: #476be3;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .logo-header {
+    width: 50%;
+  }
+
+  .tagline {
+    font-size: 2rem;
+    color: #3b54a4;
+    font-weight: 600;
+  }
+
+  .tombol-ukur {
+    background-color: #3b54a4;
+    color: white;
+    width: 70%;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+
+  .packshot {
+    width: 100%;
+  }
+  .komposisi-component {
+    width: 50%;
+  }
+
+  .kalkulator-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .video-tvc {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #pembatas-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-content h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+
+  .apotek {
+    width: 55%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+
+  .online {
+    width: 50%;
+  }
+}
+
+/* Mobile sedang & besar */
+@media (max-width: 768px) {
+  .logo-header {
+    width: 30%;
+  }
+
+  .tagline {
+    font-size: 2rem;
+    color: #3b54a4;
+    font-weight: 600;
+  }
+
+  .tombol-ukur {
+    background-color: #3b54a4;
+    color: white;
+    width: 85%;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .packshot {
+    width: 100%;
+  }
+
+  .komposisi-section {
+    margin-top: 30px;
+  }
+
+  .komposisi-component {
+    width: 50%;
+  }
+
+  .kalkulator-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .video-tvc {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #pembatas-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .footer-content h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+
+  .apotek {
+    width: 55%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+
+  .online {
+    width: 50%;
+  }
+
+  .wave {
+    background-image: url("/assets/images/background-wave2-01.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Tablet (portrait) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .logo-header {
+    width: 20%;
+  }
+
+  .tagline {
+    font-size: 2.2rem;
+    color: #3b54a4;
+    font-weight: 600;
+  }
+
+  .tombol-ukur {
+    background-color: #3b54a4;
+    color: white;
+    width: 70%;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .packshot {
+    width: 70%;
+  }
+  .komposisi-component {
+    width: 25%;
+  }
+
+  .komposisi-section {
+    margin-top: 20px;
+  }
+
+  .kalkulator-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .video-tvc {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #pembatas-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-content h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+
+  .apotek {
+    width: 55%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+
+  .online {
+    width: 30%;
+  }
+
+  .wave {
+    background-image: url("/assets/images/background-wave3-01.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Tablet besar / iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .logo-header {
+    width: 20%;
+  }
+
+  .tagline {
+    font-size: 2.2rem;
+    color: #3b54a4;
+    font-weight: 600;
+  }
+
+  .tombol-ukur {
+    background-color: #3b54a4;
+    color: white;
+    width: 45%;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .packshot {
+    width: 70%;
+  }
+
+  .komposisi-component {
+    width: 25%;
+  }
+
+  .komposisi-section {
+    margin-top: 20px;
+  }
+
+  .kalkulator-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .video-tvc {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #pembatas-footer {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .footer-content h2 {
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .apotek {
+    width: 55%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+
+  .online {
+    width: 30%;
+  }
+
+  .wave {
+    background-image: url("/assets/images/background-wave3-01.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Laptop/Desktop (>= 1367px) */
+@media (min-width: 1367px) {
+  .logo-header {
+    width: 15%;
+  }
+
+  .tagline {
+    font-size: 3rem;
+    color: #3b54a4;
+    font-weight: 600;
+  }
+
+  .tombol-ukur {
+    background-color: #3b54a4;
+    color: white;
+    width: 45%;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+
+  .packshot {
+    width: 60%;
+  }
+
+  .komposisi-component {
+    width: 23%;
+  }
+
+  .komposisi-section {
+    margin-top: 20px;
+  }
+
+  .kalkulator-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .video-tvc {
+    width: 80%;
+    border-radius: 20px;
+  }
+
+  #pembatas-footer {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .footer-content h2 {
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .apotek {
+    width: 45%;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+
+  .online {
+    width: 30%;
+  }
+
+  .wave {
+    background-image: url("/assets/images/background-wave3-01.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
