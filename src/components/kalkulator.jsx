@@ -48,10 +48,10 @@ function KalkulatorTPG() {
               className="card-title mb-4 text-center"
               style={{ fontWeight: "600", color: "#3B54A4" }}
             >
-              Kalkulator Perkiraan Tinggi Anak
+              Kalkulator Tinggi Potensi Genetik (TPG) Anak
             </h2>
             <div className="mb-3">
-              <label className="form-label">Jenis Kelamin:</label>
+              <label className="form-label">Jenis Kelamin Anak:</label>
               <div>
                 <div className="form-check form-check-inline">
                   <input
